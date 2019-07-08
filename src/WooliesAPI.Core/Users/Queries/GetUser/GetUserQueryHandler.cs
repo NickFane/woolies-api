@@ -16,7 +16,7 @@ namespace WooliesAPI.Core.Users.Queries.GetUser
             // Implement DB context and retrieve from there
             return new User()
             {
-                Name = "test-user",
+                Name = "Nick Fane",
                 Token = "6e424f40-80a9-49b8-8d66-5921a6734555"
             };
         }
