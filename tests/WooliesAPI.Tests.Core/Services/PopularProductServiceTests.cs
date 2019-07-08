@@ -37,9 +37,11 @@ namespace WooliesAPI.Tests.Core.Services
             Assert.IsTrue(result.Single(s => s.ProductName == "testC").PopularityRank == 2);
         }
 
-        // Test based on unnecessary logic (secondary ordering).
-        // But it's still good to test so there's a breakage if the logic changes.
+        // This test is based on logic that breaks the challenge.
+        // However as we have no control on the ordering of products we get from resource API
+        // I believe a secondary sort is required to maintain consistency
         [Test]
+        [Ignore("This fails the challenge")]
         public void ReturnsEqualPopularProducts_NameSorted()
         {
             // Arrange

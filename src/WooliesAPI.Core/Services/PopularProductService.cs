@@ -38,10 +38,10 @@ namespace WooliesAPI.Core.Services
                     }
                 }
             }
-             
+
             // Iterate through the products by most purchased -> least purchased
             // Assign an incrementing rank based on quantities.
-            var orderedProducts = products.OrderByDescending(o => o.Value).ThenBy(o => o.Key).ToList();
+            var orderedProducts = products.OrderByDescending(o => o.Value).ToList(); //.ThenBy(o => o.Key).ToList(); // Commented out due to incorrectness? If popularity is the same, what's the consistent secondary sort? 
             var productPopularity = new List<ProductPopularity>();
             for (int i = 0; i < orderedProducts.Count; i++)
             {
