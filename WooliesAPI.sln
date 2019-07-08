@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Domain", "src\Wo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Core", "src\WooliesAPI.Core\WooliesAPI.Core.csproj", "{1739D414-532E-4EFD-B66D-F3A59CB143EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Persistence", "src\WooliesAPI.Persistence\WooliesAPI.Persistence.csproj", "{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Persistence", "src\WooliesAPI.Persistence\WooliesAPI.Persistence.csproj", "{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Tests.Persistence", "tests\WooliesAPI.Tests.Persistence\WooliesAPI.Tests.Persistence.csproj", "{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Tests.Persistence", "tests\WooliesAPI.Tests.Persistence\WooliesAPI.Tests.Persistence.csproj", "{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{523531D0-3838-465F-BCDA-EB1FA3A0E3DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Tests.Core", "tests\WooliesAPI.Tests.Core\WooliesAPI.Tests.Core.csproj", "{A6F157DD-32A0-4D1A-B498-8DC42CEA0238}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,17 @@ Global
 		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F157DD-32A0-4D1A-B498-8DC42CEA0238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F157DD-32A0-4D1A-B498-8DC42CEA0238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F157DD-32A0-4D1A-B498-8DC42CEA0238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F157DD-32A0-4D1A-B498-8DC42CEA0238}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13} = {523531D0-3838-465F-BCDA-EB1FA3A0E3DE}
+		{A6F157DD-32A0-4D1A-B498-8DC42CEA0238} = {523531D0-3838-465F-BCDA-EB1FA3A0E3DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C9355A4-6027-4435-9776-D4C0D5F98978}
