@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Web", "src\WooliesAPI.Web\WooliesAPI.Web.csproj", "{867D1EF3-6E54-43BD-AC13-BCF282EF4ED2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Domain", "src\WooliesAPI.Domain\WooliesAPI.Domain.csproj", "{37DFC0FF-8345-4066-908B-B285F62CE376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Core", "src\WooliesAPI.Core\WooliesAPI.Core.csproj", "{1739D414-532E-4EFD-B66D-F3A59CB143EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{867D1EF3-6E54-43BD-AC13-BCF282EF4ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{867D1EF3-6E54-43BD-AC13-BCF282EF4ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{867D1EF3-6E54-43BD-AC13-BCF282EF4ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DFC0FF-8345-4066-908B-B285F62CE376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DFC0FF-8345-4066-908B-B285F62CE376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DFC0FF-8345-4066-908B-B285F62CE376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DFC0FF-8345-4066-908B-B285F62CE376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1739D414-532E-4EFD-B66D-F3A59CB143EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1739D414-532E-4EFD-B66D-F3A59CB143EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1739D414-532E-4EFD-B66D-F3A59CB143EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1739D414-532E-4EFD-B66D-F3A59CB143EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
