@@ -41,7 +41,7 @@ namespace WooliesAPI.Core.Services
              
             // Iterate through the products by most purchased -> least purchased
             // Assign an incrementing rank based on quantities.
-            var orderedProducts = products.OrderByDescending(o => o.Value).ToList();
+            var orderedProducts = products.OrderByDescending(o => o.Value).ThenBy(o => o.Key).ToList();
             var productPopularity = new List<ProductPopularity>();
             for (int i = 0; i < orderedProducts.Count; i++)
             {
