@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WooliesAPI.Core", "src\Wool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Persistence", "src\WooliesAPI.Persistence\WooliesAPI.Persistence.csproj", "{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WooliesAPI.Tests.Persistence", "tests\WooliesAPI.Tests.Persistence\WooliesAPI.Tests.Persistence.csproj", "{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C56EF5-337F-4110-B2EE-0D91EE50EF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689911A2-2F00-4A6C-9FFF-FF6F6D9C8A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
