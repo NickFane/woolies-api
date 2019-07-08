@@ -6,8 +6,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System.Reflection;
+using WooliesAPI.Core.Services;
+using WooliesAPI.Core.ShopperHistories.Queries;
 using WooliesAPI.Core.Users.Queries.GetUser;
 using WooliesAPI.Domain.Entities;
+using WooliesAPI.Persistence.Api;
 using WooliesAPI.Persistence.Db;
 
 namespace WooliesAPI.Web
@@ -24,6 +27,7 @@ namespace WooliesAPI.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(GetUserQueryHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetProductsQueryHandler).GetTypeInfo().Assembly);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // Just injecting data into our DB Context on startup
@@ -31,6 +35,13 @@ namespace WooliesAPI.Web
             {
                 return new WooliesApiDbContext(new List<User>() { new User { Name = "Nick Fane", Token = "6e424f40-80a9-49b8-8d66-5921a6734555" } });
             });
+            services.AddHttpClient<IResourceApi, WooliesResourceApi>(client =>
+            {
+                client.BaseAddress = new System.Uri("http://dev-wooliesx-recruitment.azurewebsites.net");
+            });
+
+            services.AddTransient<IProductOrderingService, ProductOrderingService>();
+            services.AddTransient<IPopularProductService, PopularProductService>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
