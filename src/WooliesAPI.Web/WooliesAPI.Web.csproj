@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WooliesAPI.Core\WooliesAPI.Core.csproj" />
     <ProjectReference Include="..\WooliesAPI.Domain\WooliesAPI.Domain.csproj" />
+    <ProjectReference Include="..\WooliesAPI.Persistence\WooliesAPI.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
