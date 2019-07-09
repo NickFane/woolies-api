@@ -19,6 +19,13 @@ namespace WooliesAPI.Web
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .Configure(config =>
+                {
+                    var configBuilder = new ConfigurationBuilder()
+                        .SetBasePath(Directory.GetCurrentDirectory())
+                        // Not worrying about environment based config for this.
+                        .AddJsonFile("appsettings.json", optional: false).Build();
+                })
                 .UseStartup<Startup>();
     }
 }
